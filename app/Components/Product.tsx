@@ -25,7 +25,7 @@ const Product = () => {
             id: 2,
             name: "High Quality Modern Sofa",
             price: "$ 150",
-            image: "/toppick1.png", 
+            image: "/modern.png", 
           },
           {
             id: 3,
