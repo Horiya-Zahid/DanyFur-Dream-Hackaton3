@@ -1,15 +1,12 @@
 import React from 'react'
-import Hero from './Hero';
-import Table from './Table';
-import Product from './Product';
-import AsguardSofa from './AsguardSofa';
-import Blog from './Blog';
-import Insta from './Insta';
+import dynamic from "next/dynamic"; 
 
-
-
-
-
+const Hero = dynamic(() => import("./Hero"));
+const Table = dynamic(() => import("./Table"));
+const Product = dynamic(() => import("./Product"));
+const AsguardSofa = dynamic(() => import("./AsguardSofa"));
+const Blog = dynamic(() => import("./Blog"));
+const Insta = dynamic(() => import("./Insta"));
 
 
 

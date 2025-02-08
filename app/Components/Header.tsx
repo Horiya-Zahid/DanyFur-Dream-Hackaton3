@@ -40,7 +40,7 @@ function Header() {
           <Link href="/wishlist"><div><FiHeart size={20} color="#000000" /></div></Link>
         </div>
         <div className="flex items-center cursor-pointer">
-          <Link href="/cart"><div><FiShoppingCart size={20} color="#000000" /></div></Link>
+          <Link href="/viewcart"><div><FiShoppingCart size={20} color="#000000" /></div></Link>
         </div>
       </div>
 

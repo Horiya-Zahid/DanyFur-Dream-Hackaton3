@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Product = () => {
   return (
@@ -16,27 +17,27 @@ const Product = () => {
         {[
           {
             id: 1,
-            name: "Trenton modular sofa_3",
-            price: "Rs. 25,000.00",
-            image: "/sofa_3.png", 
+            name: "Stylish Armchair",
+            price: "$ 780",
+            image: "/toppick1.png", 
           },
           {
             id: 2,
-            name: "Granite dining table with dining chair",
-            price: "Rs. 25,000.00",
-            image: "/dining.png", 
+            name: "High Quality Modern Sofa",
+            price: "$ 150",
+            image: "/toppick2.png", 
           },
           {
             id: 3,
-            name: "Outdoor bar table and stool",
-            price: "Rs. 25,000.00",
-            image: "/bar.png",
+            name: "Liberty Center",
+            price: "$ 1100",
+            image: "/toppick3.png",
           },
           {
             id: 4,
-            name: "Plain console with teak mirror",
-            price: "Rs. 25,000.00",
-            image: "/teak.png", 
+            name: "Matilda Velvet Bed",
+            price: "$ 600",
+            image: "/toppick4.png", 
           },].map((product) => (
           <div
             key={product.id}
@@ -61,12 +62,12 @@ const Product = () => {
 
       {/* Button */}
       <div className="text-center">
-        <a
-          href="/"
+        <Link
+          href="/shop"
           className="text-black text-lg underline decoration-2 hover:text-gray-900"
         >
           View More
-        </a>
+        </Link>
       </div>
     </div>
   );

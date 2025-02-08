@@ -3,7 +3,9 @@ import Image from "next/image";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
 import { BsFillClockFill } from "react-icons/bs";
-import Header from "../Components/Header";
+import dynamic from "next/dynamic"; 
+
+const Header = dynamic(() => import("../Components/Header"));
 
 function page() {
   return (
