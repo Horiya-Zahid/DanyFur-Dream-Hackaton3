@@ -19,25 +19,25 @@ const Product = () => {
             id: 1,
             name: "Stylish Armchair",
             price: "$ 780",
-            image: "/toppick1.png", 
+            image: "/toppick0.png", 
           },
           {
             id: 2,
             name: "High Quality Modern Sofa",
             price: "$ 150",
-            image: "/toppick2.png", 
+            image: "/toppick1.png", 
           },
           {
             id: 3,
             name: "Liberty Center",
             price: "$ 1100",
-            image: "/toppick3.png",
+            image: "/toppick2.png",
           },
           {
             id: 4,
             name: "Matilda Velvet Bed",
             price: "$ 600",
-            image: "/toppick4.png", 
+            image: "/toppick3.png", 
           },].map((product) => (
           <div
             key={product.id}
