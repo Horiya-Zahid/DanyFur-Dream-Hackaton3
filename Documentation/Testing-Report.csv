@@ -1,0 +1,15 @@
+Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Security Level,Remarks
+TC001,Verify product listing page displays all products correctly.,"1. Navigate to products page.
+2. Check product details (name, price, image).",All products are displayed with correct details.,All products displayed as expected.,Pass,High,Tested on Chrome and Firefox.
+TC002,Ensure the cart adds items and calculates total accurately.,"1. Add product to cart.
+2. Verify total price and item count.",Cart updates correctly with accurate total.,Cart updates and totals are accurate.,Pass,High,Verified with multiple products.
+TC003,Test error handling when API fails to fetch data.,"1. Simulate API failure.
+2. Check if proper error message is displayed.",Error message: 'Unable to load products. Please try again later.',Error message displayed correctly.,Pass,High,Handled fallback UI for API failure.
+TC004,Verify proper error message on network failure during API call.,"1. Simulate network failure during API call.
+2. Observe error handling response.",Error message: 'Unable to load products. Please check your connection or try again later.',Error message displayed correctly.,Pass,High,Tested with offline mode simulation.
+TC005,Ensure fallback UI appears when API returns empty or invalid data.,"1. Return empty or invalid data from API.
+2. Check if fallback UI is displayed.",Fallback UI with message: 'No products available at the moment.',Fallback UI displayed as expected.,Pass,Medium,Verified fallback UI across desktop and mobile.
+TC006,Test secure HTTPS implementation across all site pages.,"1. Access all pages and verify HTTPS in the browser URL.
+2. Confirm secure communication.",HTTPS protocol is consistently used across all pages.,HTTPS implemented successfully on all pages.,Pass,High,Ensured HTTPS configuration in production environment.
+TC007,Validate input fields to prevent SQL injection and XSS attacks.,"1. Input malicious scripts or SQL commands in input fields.
+2. Observe how the system handles them.",Malicious inputs are sanitized and do not affect the system.,"Inputs are sanitized, and the system remains secure.",Pass,Medium,Tested with multiple attack vectors for input fields.

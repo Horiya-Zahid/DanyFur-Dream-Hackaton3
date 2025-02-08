@@ -1,0 +1,11 @@
+API Endpoints,API Methods,Description,Responsed Examples
+,,,
+/api/register,POST,Registration for new user,"{ ""message"": ""Registration successful"", ""userId"": 1234 }"
+/api/login,POST,User login ,"{ ""message"": ""Login successful"", ""token"": ""xyz12345abcde"" }"
+/api/logout,POST,User logout,"{ ""message"": ""Logout successful"" }"
+/api/products,GET,Fetching all products details,"[ { ""id"": 1, ""name"": ""Product 1"", ""price"": 100 }, { ""id"": 2, ""name"": ""Product 2"", ""price"": 200 } ]"
+/api/prodcuts/:id,GET,fetching detail of specific product,"{ ""id"": 1, ""name"": ""Product 1"", ""description"": ""Product details"", ""price"": 100 }"
+/api/cart,GET,Get user's cart,"{ ""items"": [{ ""productId"": 1, ""quantity"": 2, ""totalPrice"": 200 }] }"
+/api/cart,POST,Add item to cart,"{ ""message"": ""Item added to cart"", ""cart"": [{ ""productId"": 1, ""quantity"": 2, ""totalPrice"": 200 }] }"
+/api/checkout,POST,Process payment & create an order,"{ ""message"": ""Checkout successful"", ""orderId"": 5678, ""totalAmount"": 200 }"
+/api/delivery-status,GET,Tracks delivery status,"{ ""orderId"": 5678, ""status"": ""Shipped"", ""expectedDelivery"": ""2025-01-20"" }"
