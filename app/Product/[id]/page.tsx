@@ -19,8 +19,9 @@ const Page = async ({ params }: { params: { id: string } }) => {
 
   if (!product) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-100">
-        <h1 className="text-2xl font-bold text-gray-700">Product Not Found</h1>
+      <div className='container mx-auto py-16 text-center'>
+        <h1 className='text-2xl font-bold text-red-500'>Product Not Found</h1>
+        <p className='text-gray-600'>The product you are looking for does not exist.</p>
       </div>
     );
   }
